@@ -1,0 +1,10 @@
+C:\Users\CARLOS\documents\visual studio 2012\Projects\MyExpenseManager\carlos.expense.core\bin\Debug\carlos.expense.core.dll.config
+C:\Users\CARLOS\documents\visual studio 2012\Projects\MyExpenseManager\carlos.expense.core\bin\Debug\carlos.expense.core.dll
+C:\Users\CARLOS\documents\visual studio 2012\Projects\MyExpenseManager\carlos.expense.core\bin\Debug\carlos.expense.core.pdb
+C:\Users\CARLOS\documents\visual studio 2012\Projects\MyExpenseManager\carlos.expense.core\bin\Debug\EntityFramework.dll
+C:\Users\CARLOS\documents\visual studio 2012\Projects\MyExpenseManager\carlos.expense.core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\CARLOS\documents\visual studio 2012\Projects\MyExpenseManager\carlos.expense.core\bin\Debug\EntityFramework.xml
+C:\Users\CARLOS\documents\visual studio 2012\Projects\MyExpenseManager\carlos.expense.core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\CARLOS\documents\visual studio 2012\Projects\MyExpenseManager\carlos.expense.core\obj\Debug\carlos.expense.core.csprojResolveAssemblyReference.cache
+C:\Users\CARLOS\documents\visual studio 2012\Projects\MyExpenseManager\carlos.expense.core\obj\Debug\carlos.expense.core.dll
+C:\Users\CARLOS\documents\visual studio 2012\Projects\MyExpenseManager\carlos.expense.core\obj\Debug\carlos.expense.core.pdb
