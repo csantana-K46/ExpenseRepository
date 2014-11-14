@@ -47,7 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="Class2.cs" />
     <Compile Include="FakeRepository\FakeCategoryRepository.cs" />
     <Compile Include="FakeRepository\FakeExpenseRepository.cs" />
     <Compile Include="IRepository\ICategoryRepository.cs" />
