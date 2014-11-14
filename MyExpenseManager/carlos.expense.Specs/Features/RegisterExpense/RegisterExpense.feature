@@ -4,16 +4,20 @@
 	I want to register all my expenses associating
 	Then with an expense category
 
+Background: 
+	Given I have entered the category information
+
 @mytag
 Scenario: Add expense
-	Given I have entered expense money for this Expense:
+	Given I want to keep the next expense information:
 		| Field			| Value        |
 		| ID			| 1            |
-		| Amount		| 200.00          |
+		| Amount		| 200.00       |
 		| DateAdd		| 2014/11/01   |
-		| CategoryId	| 1            |
+		| Category	| Food         |
 		
 	When I press the add button
-	Then the user should see a message Expense successfully added
+	Then I should see the message "Expense added successfully"
+	And aggregated expense information
 
 
