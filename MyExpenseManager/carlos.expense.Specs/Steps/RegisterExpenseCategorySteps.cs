@@ -3,6 +3,7 @@ using carlos.expense.core.Model;
 using System.Web.Mvc;
 using MyExpenseManager.Controllers;
 using MyExpenseManager.Models;
+using NUnit.Framework;
 using Should;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
@@ -21,7 +22,7 @@ namespace carlos.expense.specs.Steps
             ScenarioContext.Current["controller"] = controller;
             ScenarioContext.Current["table"] = table;
         }
-        
+
         [When(@"I press add")]
         public void WhenIPressAdd()
         {
@@ -30,17 +31,26 @@ namespace carlos.expense.specs.Steps
             var instanceTable = table.CreateInstance<Category>();
             var viewModel = new CategoryViewModel
             {
-                Id = instanceTable.Id,
                 Name = instanceTable.Name
             };
-            ScenarioContext.Current.Set(controller.RegisterCategory(viewModel), "message");
+            ScenarioContext.Current.Set(viewModel,"viewModel");
+            ScenarioContext.Current.Set(controller.RegisterCategory(viewModel), "viewResult");
         }
-        
-        [Then(@"the result should see a message Category successfully added")]
-        public void ThenTheResultShouldSeeAMessageCategorySuccessfullyAdded()
+
+        [Then(@"it should notify '(.*)'")]
+        public void ThenItShouldNotify(string p0)
         {
-            var message = (ViewResult)ScenarioContext.Current["message"];
-            message.TempData["message"].ToString().ShouldEqual("Category successfully added");
+            var viewResult = (ViewResult)ScenarioContext.Current["viewResult"];
+            viewResult.TempData["message"].ToString().ShouldEqual(p0);
         }
+
+        [Then(@"the last category registered should match:")]
+        public void ThenTheLastCategoryRegisteredShouldMatch(Table table)
+        {
+            var instanceTable = table.CreateInstance<Category>();
+            var viewModel = (CategoryViewModel)ScenarioContext.Current["viewModel"];
+            Assert.AreEqual(instanceTable.Name,viewModel.Name);
+        }
+
     }
 }

@@ -7,3 +7,12 @@ C:\Users\CARLOS\documents\visual studio 2012\Projects\MyExpenseManager\MyExpense
 C:\Users\CARLOS\documents\visual studio 2012\Projects\MyExpenseManager\MyExpenseManager\obj\Debug\MyExpenseManager.csprojResolveAssemblyReference.cache
 C:\Users\CARLOS\documents\visual studio 2012\Projects\MyExpenseManager\MyExpenseManager\obj\Debug\MyExpenseManager.dll
 C:\Users\CARLOS\documents\visual studio 2012\Projects\MyExpenseManager\MyExpenseManager\obj\Debug\MyExpenseManager.pdb
+C:\Users\CARLOS\Documents\GitHub\ExpenseRepository\MyExpenseManager\MyExpenseManager\bin\MyExpenseManager.dll
+C:\Users\CARLOS\Documents\GitHub\ExpenseRepository\MyExpenseManager\MyExpenseManager\bin\MyExpenseManager.pdb
+C:\Users\CARLOS\Documents\GitHub\ExpenseRepository\MyExpenseManager\MyExpenseManager\bin\carlos.expense.core.dll
+C:\Users\CARLOS\Documents\GitHub\ExpenseRepository\MyExpenseManager\MyExpenseManager\bin\MySql.Web.dll
+C:\Users\CARLOS\Documents\GitHub\ExpenseRepository\MyExpenseManager\MyExpenseManager\bin\MySql.Data.dll
+C:\Users\CARLOS\Documents\GitHub\ExpenseRepository\MyExpenseManager\MyExpenseManager\bin\carlos.expense.core.pdb
+C:\Users\CARLOS\Documents\GitHub\ExpenseRepository\MyExpenseManager\MyExpenseManager\obj\Debug\MyExpenseManager.csprojResolveAssemblyReference.cache
+C:\Users\CARLOS\Documents\GitHub\ExpenseRepository\MyExpenseManager\MyExpenseManager\obj\Debug\MyExpenseManager.dll
+C:\Users\CARLOS\Documents\GitHub\ExpenseRepository\MyExpenseManager\MyExpenseManager\obj\Debug\MyExpenseManager.pdb

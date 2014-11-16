@@ -42,7 +42,7 @@ namespace MyExpenseManager.Controllers
                 };
                 _repository.RegisterCategory(category);
                 _repository.CategorySave();
-                TempData["message"] = "Category successfully added";
+                TempData["message"] = "Category registered successfully";
                 return View("Success");
             }
             else
