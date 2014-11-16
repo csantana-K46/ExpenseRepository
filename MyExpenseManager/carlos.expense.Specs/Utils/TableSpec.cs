@@ -1,4 +1,5 @@
 ﻿using System;
+using carlos.expense.core.Model;
 
 namespace carlos.expense.specs.Utils
 {
@@ -6,7 +7,7 @@ namespace carlos.expense.specs.Utils
     {
         public decimal Amount { get; set; }
         public DateTime RegisterDate { get; set; }
-        public int SelectedValue { get; set; }
+        public Category Category { get; set; }
         public int CategoryId { get; set; }
        
     }

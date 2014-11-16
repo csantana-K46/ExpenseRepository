@@ -89,7 +89,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Steps\CategoryExistsSteps.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="Features\CategoryExists\CategoryExists.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CategoryExists.feature</DependentUpon>
+    </Compile>
     <Compile Include="Features\RegisterExpenseCategory\RegisterExpenseCategory.feature.cs" />
     <Compile Include="Features\RegisterExpenseCategory\RegisterExpenseCategory1.feature.cs">
       <AutoGen>True</AutoGen>
@@ -133,6 +139,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Features\CategoryExists\CategoryExists.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>CategoryExists.feature.cs</LastGenOutput>
+    </None>
     <None Include="Features\RegisterExpenseCategory\RegisterExpenseCategory.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>RegisterExpenseCategory1.feature.cs</LastGenOutput>

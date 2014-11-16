@@ -44,7 +44,7 @@ namespace MyExpenseManager.Controllers
                 };
                 _repository.RegisterExpense(expense);
                 _repository.ExpenseSave();
-                TempData["message"] = "Expense successfully added";
+                TempData["message"] = "Expense registered successfully";
                 return View("success");
             }
            
