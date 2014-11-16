@@ -5,19 +5,21 @@
 	Then with an expense category
 
 Background: 
-	Given I have entered the category information
+	Given the category "Food" exists
 
 @mytag
 Scenario: Add expense
-	Given I want to keep the next expense information:
-		| Field			| Value        |
-		| ID			| 1            |
-		| Amount		| 200.00       |
-		| DateAdd		| 2014/11/01   |
+	When I register an expense with the following data:
+		| Field		| Value        |
+		| Amount	| 200.00       |
+		| Date		| 2014/11/01   |
 		| Category	| Food         |
 		
-	When I press the add button
-	Then I should see the message "Expense added successfully"
-	And aggregated expense information
+	Then it should notify 'Expense registered successfully'
+	And the last expense registed should match:
+	    | Field		| Value        |
+		| Amount	| 200.00       |
+		| Date		| 2014/11/01   |
+		| Category	| Food         |
 
 

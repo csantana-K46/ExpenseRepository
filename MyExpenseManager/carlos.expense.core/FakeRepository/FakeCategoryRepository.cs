@@ -47,5 +47,13 @@ namespace carlos.expense.core.FakeRepository
         {
             _submitCategorySave = true;
         }
+
+
+        public Category GetCategoryByNAme(string name)
+        {
+            return (from cat in _categories
+                    where (cat.Name == name)
+                    select cat).FirstOrDefault();
+        }
     }
 }

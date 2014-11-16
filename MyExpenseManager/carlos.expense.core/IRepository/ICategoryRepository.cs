@@ -13,6 +13,7 @@ namespace carlos.expense.core.IRepository
         void EditCategory(Category category);
         IList<Category> GetCategories();
         Category GetCategoryById(int id);
+        Category GetCategoryByNAme(string name);
         void CategorySave();
     }
 }

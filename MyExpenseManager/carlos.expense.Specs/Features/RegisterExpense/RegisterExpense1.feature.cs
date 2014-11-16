@@ -69,7 +69,7 @@ namespace carlos.expense.Specs.Features.RegisterExpense
         {
 #line 7
 #line 8
- testRunner.Given("I have entered the category information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("the category \"Food\" exists", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
         }
         
@@ -89,25 +89,33 @@ this.FeatureBackground();
                         "Field",
                         "Value"});
             table1.AddRow(new string[] {
-                        "ID",
-                        "1"});
-            table1.AddRow(new string[] {
                         "Amount",
                         "200.00"});
             table1.AddRow(new string[] {
-                        "DateAdd",
+                        "Date",
                         "2014/11/01"});
             table1.AddRow(new string[] {
                         "Category",
                         "Food"});
 #line 12
- testRunner.Given("I want to keep the next expense information:", ((string)(null)), table1, "Given ");
+ testRunner.When("I register an expense with the following data:", ((string)(null)), table1, "When ");
+#line 18
+ testRunner.Then("it should notify \'Expense registered successfully\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Field",
+                        "Value"});
+            table2.AddRow(new string[] {
+                        "Amount",
+                        "200.00"});
+            table2.AddRow(new string[] {
+                        "Date",
+                        "2014/11/01"});
+            table2.AddRow(new string[] {
+                        "Category",
+                        "Food"});
 #line 19
- testRunner.When("I press the add button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 20
- testRunner.Then("I should see the message \"Expense added successfully\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 21
- testRunner.And("aggregated expense information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("the last expense registed should match:", ((string)(null)), table2, "And ");
 #line hidden
             this.ScenarioCleanup();
         }

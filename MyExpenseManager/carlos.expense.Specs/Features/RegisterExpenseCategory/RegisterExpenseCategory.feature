@@ -6,8 +6,10 @@
 @mytag
 Scenario: Add category
 	Given I have entered the category information
-		| Field | Value    |
-		| ID    | 1        |
-		| Name  | "Comida" |
+		| Field | Value  |
+		| Name  | "Food" |
 	When I press add
-	Then the result should see a message Category successfully added
+	Then it should notify 'Category registered successfully'
+	And the last category registered should match:
+		| Field | Value  |
+		| Name  | "Food" |
